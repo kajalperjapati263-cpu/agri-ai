@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Leaf, Mail, Lock, LogIn, ArrowRight, Code2, Twitter } from "lucide-react";
+import { Leaf, Mail, Lock, LogIn, ArrowRight, Code2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const staggerContainer = {
