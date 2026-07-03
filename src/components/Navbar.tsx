@@ -6,7 +6,14 @@ import { Leaf, Menu, X, Play } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { motion, AnimatePresence, useScroll, useMotionValueEvent, LayoutGroup } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useMotionValueEvent,
+  LayoutGroup,
+  type Variants,
+} from "framer-motion";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -28,7 +35,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants:Variants = {
   hidden: { opacity: 0, x: 18, filter: "blur(4px)" },
   show: {
     opacity: 1,
